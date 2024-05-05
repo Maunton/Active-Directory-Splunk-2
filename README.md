@@ -35,9 +35,14 @@ By understanding the vulnerabilities associated with LLMNR and implementing appr
 Network Diagram: <br/>
 <img src="https://imgur.com/pEdUmkX.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
+<br />
   
-<h2>LLMNR Poisoning using Responder in Kali Linux to acquire a hash value from the victim:</h2>  
+<h2>LLMNR Poisoning using Responder in Kali Linux to acquire a hash value from the victim:</h2>
 
+## Usage:
+    sudo responder -I eth0 -dPv
+<br />    
+<br />
 <p align="center">
 LLMNR Poisoning using Responder: <br/>
 <img src="https://imgur.com/1eEaZeL.png" height="80%" width="80%" alt="Project walk-through"/>
@@ -51,7 +56,15 @@ Responder receives hash value from victim: <br/>
 <img src="https://imgur.com/7I0PpL7.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />
 <br />
+<p align="center">
 Using hashcat in Kali Linux, we decrypt the hash: <br/>
+<br />
+<br />  
+
+## Usage:
+    hashcat -m 5600 hash.txt ~/Desktop/ad-project/passwords.txt
+
+<p align="center">
 <img src="https://imgur.com/XbANgmJ.png" height="80%" width="80%" alt="Project walk-through"/>
 <br />  
 <br />
