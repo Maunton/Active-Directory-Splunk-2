@@ -1,4 +1,4 @@
-<h1>Active Directory with Splunk: LLMNR Poisoning and Mitigation</h1>
+<h1>LLMNR Poisoning and Mitigation</h1>
 
 
 
